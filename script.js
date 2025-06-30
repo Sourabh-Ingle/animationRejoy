@@ -1,8 +1,17 @@
 let page1Content = document.querySelector("#page1-content");
-let cursor=document.querySelector("#cursor-animation");
+let cursor = document.querySelector("#cursor-animation");
+let page2Content =  document.querySelector("#page2");
 
-page1Content.addEventListener('mousemove',(e)=>{
-    //   console.log(e.clientX,e.clientY);
-    cursor.style.left=e.clientX+'px';
-    cursor.style.top=e.clientY+'px';
+// core js
+// page1Content.addEventListener('mousemove',(e)=>{
+//     cursor.style.left=e.clientX+'px';
+//     cursor.style.top=e.clientY+'px';
+// })
+
+// WHIT HELP OF GSAP
+page1Content.addEventListener('mousemove', (e) => {
+    gsap.to(cursor, {
+       x:e.x,
+       y:e.y
+    })
 })
