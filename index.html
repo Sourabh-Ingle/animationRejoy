@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation | GSAP</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="main">
         <div id="page1">
+            <div id="cursor-animation">
+                <p class="play-reel">Play Reel</p>
+            </div>
             <video autoplay muted loop src="/vedio.mp4"></video>
             <div id="page1-content">
-                <nav>
-                    <h3 class="logo-title">Rejoice</h3>
+                <nav class="navBar">
+                    <h3 class="logo-title">The Venture Agency</h3>
                     <h4 class="menu">Menu</h4>
                 </nav>
+                <h2 class="title">
+                    <span>r</span>
+                    <span>e</span>
+                    <span>j</span>
+                    <span>o</span>
+                    <span>u</span>
+                    <span>i</span>
+                    <span>c</span>
+                    <span>e</span>
+                </h2>
             </div>
         </div>
     </div>
 
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
