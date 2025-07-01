@@ -29,7 +29,7 @@ function scroll() {
     ScrollTrigger.refresh();
 }
 
-// scroll();
+scroll();
 
 
 
@@ -85,7 +85,7 @@ function page2Animation() {
     //         markers: true // optional: shows start/end markers
     //     }
     //   });
-    delays.from("#page2-content h2", {
+    delays.from("#page2", {
         y: 120,
         stagger:0.2,
         duration:1,
@@ -93,7 +93,7 @@ function page2Animation() {
         // delay:1,
         scrollTrigger: {
             trigger: "#page2",
-            // scroller: "#main",
+            scroller: "#main",
             start: "top 47%",
             end: "top 46%",
             markers: true,
