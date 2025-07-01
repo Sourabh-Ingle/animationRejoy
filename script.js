@@ -44,7 +44,7 @@ scroll();
 function cursorEffect() {
     let page1Content = document.querySelector("#page1-content");
     let cursor = document.querySelector("#cursor-animation");
-    let page2Content = document.querySelector("#page2");
+    let page2Content = document.querySelector("#section2");
 
     // core js
     // page1Content.addEventListener('mousemove',(e)=>{
@@ -85,18 +85,17 @@ function page2Animation() {
     //         markers: true // optional: shows start/end markers
     //     }
     //   });
-    delays.from("#page2", {
+    delays.from("#section2", {
         y: 120,
         stagger:0.2,
         duration:1,
         opacity: 0,
         // delay:1,
         scrollTrigger: {
-            trigger: "#page2",
+            trigger: "#section2",
             scroller: "#main",
             start: "top 47%",
             end: "top 46%",
-            markers: true,
             scrub:2
         }
     })
