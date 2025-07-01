@@ -64,7 +64,7 @@ html {
     align-items: center;
 }
 
-#page1-content .navBar {
+#page1-content #navBar {
     width: 90%;
     padding-block: 2rem;
     margin: 0 auto;
@@ -124,7 +124,8 @@ html {
     font-weight: 500;
     line-height: 2rem;
 }
-#page2-content2 .desc-content2 .learn-more{
+
+#page2-content2 .desc-content2 .learn-more {
     color: #d3d3d3;
     font-size: 2vw;
     font-weight: 500;
