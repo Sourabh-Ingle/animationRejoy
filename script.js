@@ -44,7 +44,6 @@ scroll();
 function cursorEffect() {
     let page1Content = document.querySelector("#page1-content");
     let cursor = document.querySelector("#cursor-animation");
-    let page2Content = document.querySelector("#section2");
 
     // core js
     // page1Content.addEventListener('mousemove',(e)=>{
@@ -74,7 +73,7 @@ function cursorEffect() {
 cursorEffect();
 
 
-
+// animation on scroll for section 2
 function page2Animation() {
     let delays = gsap.timeline()
     //     {
@@ -101,5 +100,5 @@ function page2Animation() {
     })
 }
 
-page2Animation()
+page2Animation();
 
